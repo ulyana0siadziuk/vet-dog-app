@@ -1,0 +1,95 @@
+.banners-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+/* Административная панель баннеров */
+.banner-admin-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.banner-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.banner-input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.add-banner-button,
+.delete-banner-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-banner-button {
+  background-color: #28a745;
+}
+
+.add-banner-button:hover {
+  background-color: #218838;
+}
+
+.delete-banner-button {
+  background-color: #dc3545;
+}
+
+.delete-banner-button:hover {
+  background-color: #c82333;
+}

@@ -1,0 +1,18 @@
+.main-content {
+  height: 43px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 43px);
+}
+
+.main {
+  flex: 1;
+}
+
+.footer {
+  margin-top: auto;
+  /* Футер прижимается к нижней части страницы */
+}

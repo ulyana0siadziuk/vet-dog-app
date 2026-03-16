@@ -1,0 +1,320 @@
+.catalog-main-custom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 1000px;
+  /* Для трех карточек */
+}
+
+/* Когда карточек две */
+.catalog-main-custom.two-items {
+  max-width: 700px;
+  /* Сужаем контейнер для двух элементов */
+  gap: 30px;
+  /* Увеличиваем промежуток, если нужно */
+}
+
+
+
+.product-card-container-custom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.category-title-custom {
+  font-size: 28px;
+  font-weight: bold;
+  color: #213547;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 100px;
+}
+
+.product-card-custom {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  cursor: pointer;
+}
+
+.product-card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-header-custom {
+  position: relative;
+}
+
+.product-discount-tag-custom {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  /* background-color: #ffd700; */
+  /* color: #fff; */
+  color: darksalmon;
+  font-weight: bold;
+
+  font-size: 20px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.product-image-custom {
+  width: 100%;
+  height: 300px;
+  object-fit: scale-down;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.product-name-custom {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0;
+  color: #333;
+}
+
+.product-description-custom2 {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+  line-height: 1.4;
+  /* Высота строки */
+  max-height: 60px;
+  /* Обрезка на 3 строки */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* Количество строк */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  /* Добавление "..." в конце строки */
+  word-wrap: break-word;
+  /* Перенос длинных слов */
+  text-align: center;
+  /* Центрирование текста */
+}
+
+
+.product-weight-custom {
+  font-size: 14px;
+  color: #777;
+}
+
+.product-price-custom {
+  margin: 16px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Выровнять по центру */
+  gap: 8px;
+  /* Добавить расстояние между ценами */
+}
+
+.product-current-price-custom {
+  color: #e63946;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.product-original-price-custom {
+  color: #777;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.add-to-cart-btn-custom {
+  display: inline-block;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #32CD32;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-btn-custom:hover {
+  background-color: #28a745;
+}
+
+.product-text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  /* Гарантировать, что текст будет в одну строку */
+  text-align: center;
+}
+
+/* Общие стили для кнопок "Изменить" */
+.edit-button {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 1px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: white;
+  /* Красный цвет */
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-top: 10px;
+  /* Отступ сверху для кнопок */
+  text-align: center;
+}
+
+.edit-button:hover {
+  /* background-color: #f3b1b5; */
+  transform: scale(1.1);
+  /* Темнее при наведении */
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+  .edit-button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+/* Стили для контейнера карточек */
+.catalog-main-custom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.product-card-container-custom {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.product-card-custom {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Добавляем кнопки в правый край */
+.product-actions-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  /* Расстояние между кнопками */
+  margin-top: 10px;
+}
+
+/* Общие стили для кнопок "Изменить" и "Удалить" */
+.action-button {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff4d4f;
+  /* Красный цвет */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
+  /* Небольшой отступ сверху */
+  text-align: center;
+}
+
+.action-button:hover {
+  background-color: #d9363e;
+  /* Темный оттенок красного при наведении */
+}
+
+/* Контейнер для кнопок: выравнивание по правому краю */
+.product-actions-container {
+  display: flex;
+  justify-content: flex-end;
+  /* Прижатие кнопок к правому краю */
+  gap: 10px;
+  /* Расстояние между кнопками */
+  margin-top: 10px;
+  /* Отступ сверху */
+}
+
+/* Карточка продукта */
+.product-card-custom {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.product-card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.add-product-button-custom {
+  position: relative;
+  left: 100px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #d91d1d;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: auto;
+}
+
+.add-product-button-custom:hover {
+  background-color: #ef1d1d;
+}

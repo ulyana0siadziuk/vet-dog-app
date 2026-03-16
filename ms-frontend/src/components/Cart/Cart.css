@@ -1,0 +1,145 @@
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  position: relative;
+  width: 90%;
+  /* Чтобы сделать блок с итогами "прилипшим" к правому верхнему углу */
+}
+
+.cart-items {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+  /* Уменьшаем ширину корзины */
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  width: 60%;
+}
+
+.cart-item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.cart-item-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart-item-details h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.cart-item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item-quantity-button {
+  padding: 5px 10px;
+  font-size: 18px;
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item-quantity-button:hover {
+  background-color: #bbb;
+}
+
+.cart-item-quantity p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.cart-item-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #333;
+}
+
+.cart-remove-button {
+  border: none;
+  background-color: #ff5c5c;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cart-remove-button:hover {
+  background-color: #e64545;
+}
+
+/* Новый блок для итогов справа */
+.cart-summary {
+  width: 30%;
+  /* Размер блока с итогами */
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #f4f4f4;
+  /* Добавляем другой фон для выделения */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  /* Закрепляем блок в правом верхнем углу */
+  top: 80px;
+  /* Отступ сверху */
+  right: 0px;
+  /* Отступ справа */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Добавляем тень для выделения */
+}
+
+.cart-summary h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.cart-summary p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.cart-summary .total-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.checkout-button {
+  display: none;
+  /* Убираем кнопку "Оформить заказ" */
+}

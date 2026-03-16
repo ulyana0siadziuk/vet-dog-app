@@ -1,0 +1,68 @@
+.categories-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.category-button {
+  display: flex;
+  align-items: center;
+  /* Выравнивание по вертикали */
+  justify-content: flex-start;
+  /* Текст справа от картинки */
+  width: 220px;
+  /* Ширина кнопки */
+  height: 120px;
+  /* Высота кнопки */
+  background-color: #f1f1f1;
+  border-radius: 12px;
+  /* Округлые края */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* Легкая тень */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Плавный эффект при наведении */
+  padding: 10px;
+}
+
+.category-button:hover {
+  transform: translateY(-5px);
+  /* Эффект подъема при наведении */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  /* Увеличенная тень при наведении */
+}
+
+.category-icon {
+  width: 120px;
+  /* Ширина картинки */
+  height: 120px;
+  /* Высота картинки */
+  object-fit: cover;
+  /* Картинка будет обрезаться, чтобы поместиться в блок */
+  margin-right: 10px;
+  /* Отступ между картинкой и текстом */
+}
+
+.category-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  /* Цвет текста */
+  text-align: left;
+  /* Текст выровнен по левому краю */
+  text-transform: capitalize;
+  /* Первая буква каждого слова будет заглавной */
+  flex-grow: 1;
+  /* Текст занимает оставшееся пространство */
+}
+
+.category-link {
+  text-decoration: none;
+  /* Убираем подчеркивание */
+  display: inline-flex;
+  /* Сохраняем блок с изображением и текстом */
+  align-items: center;
+  /* Выравнивание по вертикали */
+}

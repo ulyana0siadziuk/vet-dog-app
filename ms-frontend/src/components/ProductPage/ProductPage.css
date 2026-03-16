@@ -1,0 +1,119 @@
+/* Основной контейнер */
+.product-page-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Заголовок товара */
+.product-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  /* Отступ слева */
+  color: #222;
+}
+
+/* Блок с деталями: изображение + цена/кнопка */
+.product-details {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.product-image-wrapper {
+  flex: 1;
+  background-color: transparent;
+  /* Убираем цвет фона блока */
+  border: none;
+  /* Убираем границу, если есть */
+}
+
+.product-image {
+  width: 300px;
+  /* Размер изображения */
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+/* Правая секция: Цена и кнопка */
+.product-info {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e63946;
+  margin-bottom: 10px;
+}
+
+.add-to-cart-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #32cd32;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #28a745;
+}
+
+/* Блок описания */
+.product-description {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.description-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.description-text {
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.description-weight {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+  margin-top: 10px;
+}
+
+.add-to-cart-btn {
+  background-color: #32cd32;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #28a745;
+}
